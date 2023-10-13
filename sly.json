@@ -1,0 +1,25 @@
+{
+  "$schema": "https://sly-cli.fly.dev/registry/config.json",
+  "libraries": [
+    {
+      "name": "@radix-ui/icons",
+      "directory": "./other/svg/radix",
+      "postinstall": [
+        "pnpm",
+        "run",
+        "build:icons"
+      ],
+      "transformers": []
+    },
+    {
+      "name": "lucide-icons",
+      "directory": "./other/svg/lucide",
+      "postinstall": [
+        "pnpm",
+        "run",
+        "build:icons"
+      ],
+      "transformers": []
+    }
+  ]
+}
